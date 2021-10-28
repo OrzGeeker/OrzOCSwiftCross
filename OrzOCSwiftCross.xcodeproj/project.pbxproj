@@ -15,9 +15,13 @@
 		E2AB2DD2272654980096C715 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2AB2DD0272654980096C715 /* LaunchScreen.storyboard */; };
 		E2AB2DD5272654980096C715 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E2AB2DD4272654980096C715 /* main.m */; };
 		E2AB2DDD2726976E0096C715 /* SwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AB2DDC2726976E0096C715 /* SwiftViewController.swift */; };
+		FE95457327DFC6CFF7334446 /* libPods-OrzOCSwiftCross.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 758D1E3C55F50C923A4D878F /* libPods-OrzOCSwiftCross.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		42152D7103ACF4C1A1C57143 /* Pods-OrzOCSwiftCross.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrzOCSwiftCross.debug.xcconfig"; path = "Target Support Files/Pods-OrzOCSwiftCross/Pods-OrzOCSwiftCross.debug.xcconfig"; sourceTree = "<group>"; };
+		4C020443111B8D6C079ABC08 /* Pods-OrzOCSwiftCross.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrzOCSwiftCross.release.xcconfig"; path = "Target Support Files/Pods-OrzOCSwiftCross/Pods-OrzOCSwiftCross.release.xcconfig"; sourceTree = "<group>"; };
+		758D1E3C55F50C923A4D878F /* libPods-OrzOCSwiftCross.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OrzOCSwiftCross.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2AB2DBF272654960096C715 /* OrzOCSwiftCross.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OrzOCSwiftCross.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2AB2DC2272654960096C715 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E2AB2DC3272654960096C715 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -39,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE95457327DFC6CFF7334446 /* libPods-OrzOCSwiftCross.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,8 +53,18 @@
 		43491C009EE23A47825D0DAC /* Pods */ = {
 			isa = PBXGroup;
 			children = (
+				42152D7103ACF4C1A1C57143 /* Pods-OrzOCSwiftCross.debug.xcconfig */,
+				4C020443111B8D6C079ABC08 /* Pods-OrzOCSwiftCross.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		BF9275AE71597B9E866B1F05 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				758D1E3C55F50C923A4D878F /* libPods-OrzOCSwiftCross.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		E2AB2DB6272654960096C715 = {
@@ -58,6 +73,7 @@
 				E2AB2DC1272654960096C715 /* OrzOCSwiftCross */,
 				E2AB2DC0272654960096C715 /* Products */,
 				43491C009EE23A47825D0DAC /* Pods */,
+				BF9275AE71597B9E866B1F05 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,6 +112,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E2AB2DD8272654980096C715 /* Build configuration list for PBXNativeTarget "OrzOCSwiftCross" */;
 			buildPhases = (
+				6728F4EF8379C53D08440966 /* [CP] Check Pods Manifest.lock */,
 				E2AB2DBB272654960096C715 /* Sources */,
 				E2AB2DBC272654960096C715 /* Frameworks */,
 				E2AB2DBD272654960096C715 /* Resources */,
@@ -154,6 +171,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6728F4EF8379C53D08440966 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OrzOCSwiftCross-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E2AB2DBB272654960096C715 /* Sources */ = {
@@ -304,6 +346,7 @@
 		};
 		E2AB2DD9272654980096C715 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42152D7103ACF4C1A1C57143 /* Pods-OrzOCSwiftCross.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -336,6 +379,7 @@
 		};
 		E2AB2DDA272654980096C715 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C020443111B8D6C079ABC08 /* Pods-OrzOCSwiftCross.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
