@@ -11,11 +11,11 @@
 @import SwiftPod;
 @import OCSwiftPod;
 
-@interface OCViewController ()
-
-@end
-
 @implementation OCViewController
+
++ (void)classMethod {
+    NSLog(@"%@: %@ called!",NSStringFromClass(self.class), NSStringFromSelector(_cmd));
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -23,16 +23,14 @@
     self.title = @"Objective-C 页面";
     NSLog(@"%@",self.title);
     
-    // 主工程OC调用主工程Swift代码
+    // MARK: 主工程OC调用主工程Swift代码
     [SwiftViewController classMethod];
     
-    // 主工程OC调用Swift Pod 代码
+    // MARK: 主工程OC调用SwiftPod代码
     [SwiftPodClass classMethod];
-    [OCSwiftPodSwiftClass classMethod];
     
+    // MARK: 主工程OC调用OCSwiftPod代码
+    [OCSwiftPodSwiftClass classMethod];
 }
 
-+ (void)classMethod {
-    NSLog(@"%@: %@ called!",NSStringFromClass(self.class), NSStringFromSelector(_cmd));
-}
 @end

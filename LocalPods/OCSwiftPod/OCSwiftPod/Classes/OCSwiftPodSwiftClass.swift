@@ -10,6 +10,7 @@ public class OCSwiftPodSwiftClass: NSObject {
     @objc public static func classMethod() {
         print("OCSwiftPodSwiftClass.classMethod called")
         
+        // MARK: 组件内Swift调用OC
         let oc = OCSwiftPodOCClass()
         oc.instanceMethod()
     }

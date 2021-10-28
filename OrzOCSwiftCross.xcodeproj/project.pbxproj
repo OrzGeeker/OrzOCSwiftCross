@@ -67,6 +67,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E29C9FCF272A92010057B020 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				E2AB2DC2272654960096C715 /* AppDelegate.h */,
+				E2AB2DC3272654960096C715 /* AppDelegate.m */,
+				E2AB2DC5272654960096C715 /* SceneDelegate.h */,
+				E2AB2DC6272654960096C715 /* SceneDelegate.m */,
+				E2AB2DCB272654970096C715 /* Main.storyboard */,
+				E2AB2DCE272654980096C715 /* Assets.xcassets */,
+				E2AB2DD0272654980096C715 /* LaunchScreen.storyboard */,
+				E2AB2DD3272654980096C715 /* Info.plist */,
+				E2AB2DD4272654980096C715 /* main.m */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
 		E2AB2DB6272654960096C715 = {
 			isa = PBXGroup;
 			children = (
@@ -88,18 +104,10 @@
 		E2AB2DC1272654960096C715 /* OrzOCSwiftCross */ = {
 			isa = PBXGroup;
 			children = (
-				E2AB2DC2272654960096C715 /* AppDelegate.h */,
-				E2AB2DC3272654960096C715 /* AppDelegate.m */,
-				E2AB2DC5272654960096C715 /* SceneDelegate.h */,
-				E2AB2DC6272654960096C715 /* SceneDelegate.m */,
+				E29C9FCF272A92010057B020 /* Others */,
 				E2AB2DC8272654970096C715 /* OCViewController.h */,
 				E2AB2DC9272654970096C715 /* OCViewController.m */,
 				E2AB2DDC2726976E0096C715 /* SwiftViewController.swift */,
-				E2AB2DCB272654970096C715 /* Main.storyboard */,
-				E2AB2DCE272654980096C715 /* Assets.xcassets */,
-				E2AB2DD0272654980096C715 /* LaunchScreen.storyboard */,
-				E2AB2DD3272654980096C715 /* Info.plist */,
-				E2AB2DD4272654980096C715 /* main.m */,
 				E2AB2DDB2726976D0096C715 /* OrzOCSwiftCross-Bridging-Header.h */,
 			);
 			path = OrzOCSwiftCross;
@@ -356,7 +364,7 @@
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 6UF48V8A6H;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = OrzOCSwiftCross/Info.plist;
+				INFOPLIST_FILE = OrzOCSwiftCross/Others/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -389,7 +397,7 @@
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 6UF48V8A6H;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = OrzOCSwiftCross/Info.plist;
+				INFOPLIST_FILE = OrzOCSwiftCross/Others/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
