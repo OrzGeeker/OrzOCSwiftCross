@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B794A9F2906EAD6000C21A1 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 2B794A9E2906EAD6000C21A1 /* README.md */; };
 		E2AB2DC4272654960096C715 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E2AB2DC3272654960096C715 /* AppDelegate.m */; };
 		E2AB2DC7272654970096C715 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E2AB2DC6272654960096C715 /* SceneDelegate.m */; };
 		E2AB2DCA272654970096C715 /* OCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2AB2DC9272654970096C715 /* OCViewController.m */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2B794A9E2906EAD6000C21A1 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		42152D7103ACF4C1A1C57143 /* Pods-OrzOCSwiftCross.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrzOCSwiftCross.debug.xcconfig"; path = "Target Support Files/Pods-OrzOCSwiftCross/Pods-OrzOCSwiftCross.debug.xcconfig"; sourceTree = "<group>"; };
 		4C020443111B8D6C079ABC08 /* Pods-OrzOCSwiftCross.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrzOCSwiftCross.release.xcconfig"; path = "Target Support Files/Pods-OrzOCSwiftCross/Pods-OrzOCSwiftCross.release.xcconfig"; sourceTree = "<group>"; };
 		758D1E3C55F50C923A4D878F /* libPods-OrzOCSwiftCross.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OrzOCSwiftCross.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -104,6 +106,7 @@
 		E2AB2DC1272654960096C715 /* OrzOCSwiftCross */ = {
 			isa = PBXGroup;
 			children = (
+				2B794A9E2906EAD6000C21A1 /* README.md */,
 				E29C9FCF272A92010057B020 /* Others */,
 				E2AB2DC8272654970096C715 /* OCViewController.h */,
 				E2AB2DC9272654970096C715 /* OCViewController.m */,
@@ -141,7 +144,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastUpgradeCheck = 1300;
+				LastUpgradeCheck = 1410;
 				TargetAttributes = {
 					E2AB2DBE272654960096C715 = {
 						CreatedOnToolsVersion = 13.0;
@@ -174,6 +177,7 @@
 			files = (
 				E2AB2DD2272654980096C715 /* LaunchScreen.storyboard in Resources */,
 				E2AB2DCF272654980096C715 /* Assets.xcassets in Resources */,
+				2B794A9F2906EAD6000C21A1 /* README.md in Resources */,
 				E2AB2DCD272654970096C715 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,7 +295,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -344,10 +348,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -370,6 +375,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -403,6 +409,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

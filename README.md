@@ -4,7 +4,7 @@ Objective-C Swift语言混合编程探索试验工程
 
 一行代码获取示例工程
 ```bash
-rm -rf OrzOCSwiftCross && git clone https://github.com/OrzGeeker/OrzOCSwiftCross.git && cd OrzOCSwiftCross && pod update && xed .
+rm -rf OrzOCSwiftCross && git clone https://github.com/OrzGeeker/OrzOCSwiftCross.git && cd OrzOCSwiftCross && bundle install && bundle exec pod update && xed .
 ```
 
 ## 参考文档
