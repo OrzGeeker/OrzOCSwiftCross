@@ -8,6 +8,6 @@
 import Foundation
 
 @objcMembers
-class OCSwiftPodSwiftSubClassOfOCClass: OCSwiftPodOCClass {
+public class OCSwiftPodSwiftSubClassOfOCClass: OCSwiftPodOCClass {
     
 }

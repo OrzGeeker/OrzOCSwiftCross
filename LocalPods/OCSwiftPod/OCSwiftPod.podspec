@@ -33,6 +33,7 @@ TODO: Add long description of the pod here.
   s.source_files = 'OCSwiftPod/Classes/**/*'
   s.swift_version = '5.5'
   
+  s.pod_target_xcconfig = { "DEFINES_MODULE" => "YES" }
   # s.resource_bundles = {
   #   'OCSwiftPod' => ['OCSwiftPod/Assets/*.png']
   # }
