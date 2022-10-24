@@ -1,11 +1,11 @@
 PODS:
-  - FLEX (4.6.1)
+  - FLEX (5.22.10)
   - OCPod (0.1.0):
-    - FLEX (~> 4.6.0)
+    - FLEX (~> 5.0)
   - OCSwiftPod (0.1.0):
-    - SwiftyJSON (~> 4.0)
+    - SwiftyJSON (~> 5.0)
   - SwiftPod (0.1.0)
-  - SwiftyJSON (4.3.0)
+  - SwiftyJSON (5.0.1)
 
 DEPENDENCIES:
   - OCPod (from `LocalPods/OCPod`)
@@ -26,11 +26,11 @@ EXTERNAL SOURCES:
     :path: LocalPods/SwiftPod
 
 SPEC CHECKSUMS:
-  FLEX: bbc55d197f87d7cde2454c3981aa47069b694144
-  OCPod: bda0fd3db633a2d8d082d6ae5eb21cf0bb72779b
-  OCSwiftPod: b6aa402656cd09f3e9826a0694a19917e0da0526
+  FLEX: f21ee4f498eed3f8a1eded66b21939fd3b7a22ce
+  OCPod: ad3f2265e67553a19a7cf7d53ada3babdb04b34d
+  OCSwiftPod: 06ee2fcd42a70a7e19af442984281f831508665b
   SwiftPod: 9964c45bf856429cfc0351b9edefa417e4f3b01b
-  SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
+  SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
 
 PODFILE CHECKSUM: 7c4ed8973d4d3ec8e71f109507f86eb6e61198ed
 
