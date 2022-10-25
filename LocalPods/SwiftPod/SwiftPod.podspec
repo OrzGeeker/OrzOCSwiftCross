@@ -29,10 +29,16 @@ TODO: Add long description of the pod here.
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '11.0'
-
-  s.source_files = 'SwiftPod/Classes/**/*'
   s.swift_version = '5.5'
+  s.default_subspecs = 'Core', 'Extra'
   
+  s.subspec 'Core' do |cs|
+    cs.source_files = 'SwiftPod/Classes/Core/**/*'
+  end
+  
+  s.subspec 'Extra' do |ss|
+    ss.source_files = 'SwiftPod/Classes/Extra/**/*'
+  end
   # s.resource_bundles = {
   #   'SwiftPod' => ['SwiftPod/Assets/*.png']
   # }

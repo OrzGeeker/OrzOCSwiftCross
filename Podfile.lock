@@ -4,7 +4,11 @@ PODS:
     - FLEX (~> 5.0)
   - OCSwiftPod (0.1.0):
     - SwiftyJSON (~> 5.0)
-  - SwiftPod (0.1.0)
+  - SwiftPod (0.1.0):
+    - SwiftPod/Core (= 0.1.0)
+    - SwiftPod/Extra (= 0.1.0)
+  - SwiftPod/Core (0.1.0)
+  - SwiftPod/Extra (0.1.0)
   - SwiftyJSON (5.0.1)
 
 DEPENDENCIES:
@@ -29,7 +33,7 @@ SPEC CHECKSUMS:
   FLEX: f21ee4f498eed3f8a1eded66b21939fd3b7a22ce
   OCPod: ad3f2265e67553a19a7cf7d53ada3babdb04b34d
   OCSwiftPod: 4669cb75565333f1ac0033ef6f09193f48973d05
-  SwiftPod: 9964c45bf856429cfc0351b9edefa417e4f3b01b
+  SwiftPod: adc8e2fde0fce922a7a0389b2b2cd7e2b022891c
   SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
 
 PODFILE CHECKSUM: 7c4ed8973d4d3ec8e71f109507f86eb6e61198ed
